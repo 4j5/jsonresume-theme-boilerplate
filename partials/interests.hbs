@@ -1,6 +1,7 @@
 {{#if resume.interests.length}}
 <section id="interests">
-	<h2>Interests</h2>
+	<h2><i class="icon-heart"></i> Interests</h2>
+    <div class="container__row">
 	{{#each resume.interests}}
 	<div class="item">
 		{{#if name}}
@@ -17,5 +18,6 @@
 		{{/if}}
 	</div>
 	{{/each}}
+	</div>
 </section>
 {{/if}}

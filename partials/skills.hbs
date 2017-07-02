@@ -1,6 +1,7 @@
 {{#if resume.skills.length}}
 <section id="skills">
-	<h2>Skills</h2>
+	<h2><i class="icon-magic"></i> Skills</h2>
+    <div class="container__row">
 	{{#each resume.skills}}
 	<div class="item">
 		{{#if name}}
@@ -22,5 +23,6 @@
 		{{/if}}
 	</div>
 	{{/each}}
+	</div>
 </section>
 {{/if}}

@@ -1,6 +1,6 @@
 {{#if resume.references.length}}
 <section id="references">
-	<h2>References</h2>
+	<h2><i class="icon-thumbs-up"></i> References</h2>
 	{{#each resume.references}}
 	<div class="item">
 		{{#if reference}}
@@ -10,9 +10,24 @@
 		{{/if}}
 		{{#if name}}
 		<div class="name">
-			— {{name}}
+			{{name}}
 		</div>
 		{{/if}}
+		{{#if email}}
+            <div class="email">
+                <a href="mailto:{{email}}">{{email}}</a>
+            </div>
+        {{/if}}
+        {{#if address}}
+            <div class="address">
+                {{address}}
+            </div>
+        {{/if}}
+        {{#if phone}}
+            <div class="phone">
+                <a href="tel:{{phone}}">{{phone}}</a>
+            </div>
+        {{/if}}
 	</div>
 	{{/each}}
 </section>
