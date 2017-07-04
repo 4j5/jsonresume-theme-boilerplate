@@ -83,6 +83,10 @@ blockquote {
 	color: white;
 }
 
+/*#basics #header-container .container__row.header-row {*/
+	/*flex-wrap: wrap;*/
+/*}*/
+
 #basics #profile-image {
 	border-radius: 10%;
 	height: 150px;
@@ -129,6 +133,10 @@ blockquote {
 #basics h3 {
 	margin-top: 1.5em;
 }
+
+/*#basics #name-role-container .container__row.details-row {*/
+	/*flex-wrap: wrap;*/
+/*}*/
 
 #basics .contact strong,
 #location strong {
@@ -182,6 +190,7 @@ blockquote {
 .container__row {
 	display: flex;
 	flex-flow: row;
+	flex-wrap: wrap;
 }
 
 .container__col {
@@ -264,8 +273,18 @@ blockquote {
 
 #references .name {
 	font-weight: bold;
+	font-size: 18px;
+}
+
+#references .email, #references .address, #references .phone {
+	margin: 5px 15px;
 }
 
 #references .item {
 	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#references {
+	margin-bottom: 40px;
 }

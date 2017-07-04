@@ -94,6 +94,10 @@ blockquote {
 	color: white;
 }
 
+/*#basics #header-container .container__row.header-row {*/
+	/*flex-wrap: wrap;*/
+/*}*/
+
 #basics #profile-image {
 	border-radius: 10%;
 	height: 150px;
@@ -140,6 +144,10 @@ blockquote {
 #basics h3 {
 	margin-top: 1.5em;
 }
+
+/*#basics #name-role-container .container__row.details-row {*/
+	/*flex-wrap: wrap;*/
+/*}*/
 
 #basics .contact strong,
 #location strong {
@@ -193,6 +201,7 @@ blockquote {
 .container__row {
 	display: flex;
 	flex-flow: row;
+	flex-wrap: wrap;
 }
 
 .container__col {
@@ -275,10 +284,20 @@ blockquote {
 
 #references .name {
 	font-weight: bold;
+	font-size: 18px;
+}
+
+#references .email, #references .address, #references .phone {
+	margin: 5px 15px;
 }
 
 #references .item {
 	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#references {
+	margin-bottom: 40px;
 }
 	</style>
 	
@@ -288,7 +307,7 @@ blockquote {
 	<div id="resume">
 		    <section id="basics">
 		        <div id="header-container">
-		            <div class="container__row">
+		            <div class="container__row header-row">
 		                <div class="v-container__col--start">
 		                    <img id="profile-image" src="./ghost_dog.jpg" alt="">
 		                </div>
@@ -296,9 +315,9 @@ blockquote {
 		                    <div class="v-container__col--center">
 		                        <div id="name-role-container">
 		                            <h1>Andy Smith <i class="icon-emo-coffee"></i></h1>
-		                            <div class="container__row">
+		                            <div class="container__row details-row">
 		                                <h2>Developer</h2>
-		                                <div class="container__row">
+		                                <div class="container__row ">
 		                                    <div class="v-container__col--center">
 		                                        <div id="location-container">
 		                                                <section id="location">
@@ -389,10 +408,10 @@ blockquote {
 		        <div class="container__row">
 		            <div class="date">
 		                <span class="startDate">
-		                    2015-10-01
+		                    01-10-2015
 		                </span>
 		                <span class="endDate">
-		                    - 2017-07-28
+		                    - 28-07-2017
 		                </span>
 		            </div>
 		
@@ -401,7 +420,7 @@ blockquote {
 		                </h3>
 		
 		            <div class="website">
-		                <a href="https://brewdigital.uk">https://brewdigital.uk</a>
+		                <a href="https://brewdigital.uk"><i class="icon-sitemap"></i> https://brewdigital.uk</a>
 		            </div>
 		        </div>
 		            <div class="position">
@@ -423,10 +442,10 @@ blockquote {
 		        <div class="container__row">
 		            <div class="date">
 		                <span class="startDate">
-		                    2013-08-01
+		                    01-08-2013
 		                </span>
 		                <span class="endDate">
-		                    - 2014-08-01
+		                    - 01-08-2014
 		                </span>
 		            </div>
 		
@@ -435,7 +454,7 @@ blockquote {
 		                </h3>
 		
 		            <div class="website">
-		                <a href="https://www.norfolk.police.uk/">https://www.norfolk.police.uk/</a>
+		                <a href="https://www.norfolk.police.uk/"><i class="icon-sitemap"></i> https://www.norfolk.police.uk/</a>
 		            </div>
 		        </div>
 		            <div class="position">
@@ -640,13 +659,13 @@ blockquote {
 					Sophie Caswell
 				</div>
 		            <div class="email">
-		                <a href="mailto:sophie@brewdigital.uk">sophie@brewdigital.uk</a>
+		                <i class="icon-mail-alt"></i> <a href="mailto:sophie@brewdigital.uk">sophie@brewdigital.uk</a>
 		            </div>
 		            <div class="address">
-		                1 Labour In Vain Yard, Norwich, NR2 1JD
+		                <i class="icon-home"></i>1 Labour In Vain Yard, Norwich, NR2 1JD
 		            </div>
 		            <div class="phone">
-		                <a href="tel:01603 343301">01603 343301</a>
+		                <i class="icon-mobile"></i> <a href="tel:01603 343301">01603 343301</a>
 		            </div>
 			</div>
 			<div class="item">
@@ -654,7 +673,7 @@ blockquote {
 					Human Resources
 				</div>
 		            <div class="address">
-		                Norfolk Constabulary OCC Jubilee House, Falconers Chase, Wymondham, Norfolk, NR18 0WW
+		                <i class="icon-home"></i>Norfolk Constabulary OCC Jubilee House, Falconers Chase, Wymondham, Norfolk, NR18 0WW
 		            </div>
 			</div>
 		</section>
